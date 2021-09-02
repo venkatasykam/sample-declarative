@@ -7,6 +7,7 @@ pipeline {
   parameters {
     booleanParam(defaultValue: true, description: '', name: 'flag')
     string(defaultValue: 'V2DevOps', description: '', name: 'SOME_STRING')
+    parameters { choice(name: 'CHOICES', choices: ['one', 'two', 'three'], description: '') }
   }
 
   // Triggers define how the job is triggered.
